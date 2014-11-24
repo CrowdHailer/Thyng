@@ -10,21 +10,10 @@ Gem::Specification.new do |spec|
   spec.email         = ["peterhsaxton@gmail.com"]
   spec.summary       = %q{Ruby objects with public state to encourage storage as data only collections}
   spec.description   = %q{
-    Thyng
-    
-    Ruby objects with public state to encourage storage as data only collections.
-
-    What?
-
-    A thyng is a ruby object with the convention of saving state in key:value pairs that are public on the object rather than in private instance variables.
-
-    How?
-
+    Create Ruby objects with public state to encourage their storage as data only collections.
     Instead of private attributes a thyng has public aspects. Basic access to these can be declared with asect_reader, aspect_write & aspect_accessor.
-
-    Why?
-
-    Will all internal state a thyng can be reconstructed completly from its data. This allows it to be passed as JSON a json object and easily be stored in a database.
+    Thyng is a subclass of a plain Ruby Hash allowing merging, filtering etc of the objects aspects.
+    With all state external a thyng can be reconstructed completly from its data. This allows it to be passed as JSON or easily stored in a database.
   }
   spec.homepage      = "https://github.com/CrowdHailer/Thyng"
   spec.license       = "MIT"
