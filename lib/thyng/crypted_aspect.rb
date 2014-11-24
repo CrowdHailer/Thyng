@@ -13,6 +13,10 @@ class Thyng < Hash
       define_method aspect, -> () {
         BCrypt::Password.new send(crypted_aspect)
       }
+
+      define_method "check_#{aspect}?", -> (test_value) {
+        send(aspect) == test_value
+      }
     end
   end
 end

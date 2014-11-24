@@ -26,4 +26,9 @@ class CryptedTest < MiniTest::Test
     example = crypted_example.new password: password
     assert_equal BCrypt::Password, example.password.class
   end
+
+  def test_can_check_against_encrypted_value
+    example = crypted_example.new password: password
+    assert_equal true, example.check_password?(password)
+  end
 end
