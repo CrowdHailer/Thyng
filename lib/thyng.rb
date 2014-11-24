@@ -6,4 +6,10 @@ class Thyng < Hash
       self[aspect] = value
     }
   end
+
+  def self.aspect_reader aspect
+    define_method aspect, -> {
+      fetch(aspect)
+    }
+  end
 end
