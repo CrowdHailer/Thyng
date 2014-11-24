@@ -1,5 +1,9 @@
 require "thyng/version"
 
-module Thyng
-  # Your code goes here...
+class Thyng < Hash
+  def self.aspect_writer aspect
+    define_method "#{aspect}=", ->(value) {
+      self[aspect] = value
+    }
+  end
 end
