@@ -12,4 +12,9 @@ class Thyng < Hash
       fetch(aspect)
     }
   end
+
+  def self.aspect_accessor aspect
+    aspect_reader aspect
+    aspect_writer aspect
+  end
 end
