@@ -22,4 +22,8 @@ class CryptedTest < MiniTest::Test
     assert example.respond_to?('crypted_password'), 'Should be able to read crypted value'
   end
 
+  def test_aspect_is_saved_encrypted
+    example = crypted_example.new password: password
+    assert_equal BCrypt::Password, example.password.class
+  end
 end
