@@ -1,4 +1,5 @@
 require "thyng/version"
+require "thyng/crypted_aspect"
 
 class Thyng < Hash
   def initialize(args={})
