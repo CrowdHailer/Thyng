@@ -1,4 +1,4 @@
-Copyright (c) 2014 Peter
+Copyright (c) 2014 Peter Saxton
 
 MIT License
 

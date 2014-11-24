@@ -6,11 +6,11 @@ require 'thyng/version'
 Gem::Specification.new do |spec|
   spec.name          = "thyng"
   spec.version       = Thyng::VERSION
-  spec.authors       = ["Peter"]
+  spec.authors       = ["Peter Saxton"]
   spec.email         = ["peterhsaxton@gmail.com"]
-  spec.summary       = %q{TODO: Write a short summary. Required.}
+  spec.summary       = %q{Ruby objects with public state to encourage storage as data only collections}
   spec.description   = %q{TODO: Write a longer description. Optional.}
-  spec.homepage      = ""
+  spec.homepage      = "https://github.com/CrowdHailer/Thyng"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files -z`.split("\x0")
@@ -20,4 +20,5 @@ Gem::Specification.new do |spec|
 
   spec.add_development_dependency "bundler", "~> 1.7"
   spec.add_development_dependency "rake", "~> 10.0"
+  spec.add_development_dependency "minitest", "~> 5.4.3"
 end
