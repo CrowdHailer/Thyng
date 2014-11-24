@@ -14,4 +14,9 @@ class WriterTest < MiniTest::Test
     example.name = gomez
     assert_equal gomez, example[:name]
   end
+
+  def test_responds_to_writer_method
+    example = WriterExample.new
+    assert example.respond_to?('name='), 'Thyng should report response to writers'
+  end
 end
