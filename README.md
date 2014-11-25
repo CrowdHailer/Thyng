@@ -119,3 +119,25 @@ credentials.check_password? 'secret'
 3. Commit your changes (`git commit -am 'Add some feature'`)
 4. Push to the branch (`git push origin my-new-feature`)
 5. Create a new Pull Request
+
+## Discussion
+
+- Only settable once aspects, for managing database id's
+- Default values, distinct behaviour
+  - fills value on initialize
+  - sets value when first asked for
+  - returns default but does not set it
+    ```rb
+    item.compound.aspect = 5
+    item.compount.aspect
+    # => nil Because compound is null object and will not reset compount on item
+
+    item.compound = Compound.new aspect: 5
+    item.compount.aspect
+    # => 5 Nil compound is overwritten
+    ```
+
+- Code Climate
+- Code Ship
+- Mutation testing
+
