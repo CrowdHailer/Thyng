@@ -136,8 +136,11 @@ credentials.check_password? 'secret'
     item.compount.aspect
     # => 5 Nil compound is overwritten
     ```
+- Variations
+  - open accepts all values
+  - quite drops unaccepted arguments
 
 - Code Climate
 - Code Ship
 - Mutation testing
-
+- Repo pattern on wiki
