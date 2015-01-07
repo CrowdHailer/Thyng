@@ -2,6 +2,8 @@
 
 ##### Ruby objects with public state to encourage storage as data only collections.
 
+##### Idea was to handle state by making it public so that a datamapper would always know how to reach in and reconstruct an object. Felt like it was the wrong way round and so have moved on to implement immaculate record. Work in progress
+
 #### What?
 A `thyng` is a ruby object with the convention of saving state in **key:value** pairs that are public on the object rather than in private **instance variables**.
 
